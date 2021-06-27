@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
+    <Home></Home>
   </div>
 </template>
 
@@ -8,11 +9,14 @@
 import './styles/global.css';
 
 import Header from './components/HeaderComponent'
+import Home from './pages/home.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Home
   }
 }
 </script>
