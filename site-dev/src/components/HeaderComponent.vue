@@ -17,10 +17,10 @@
                 " alt="Wdev"></a>
 
                 <ul>
-                    <li><a href="/"></a>Home</li>
-                    <li><a href="/video"></a>Vídeo</li>
-                    <li><a href="/sobre"></a>Sobre</li>
-                    <li><a href="/contato"></a>Contato</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/video">Vídeo</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/contato">Contato</a></li>
                 </ul>
 
             </div>
@@ -114,6 +114,9 @@ ul {
 
 ul li {
     margin: 20px 0px;
+}
+
+ul li a {
     color: var(--color-text-light);
 }
 
@@ -140,6 +143,7 @@ ul li {
     ul li {
         margin: 0;
         margin-left: 20px;
+
     }
 }
 

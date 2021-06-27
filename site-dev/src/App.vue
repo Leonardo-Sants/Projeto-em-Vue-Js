@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
-    <Home></Home>
+    <router-view path="$router.key"></router-view>
     <Footer></Footer>
   </div>
 </template>
@@ -10,7 +10,6 @@
 import './styles/global.css';
 
 import Header from './components/HeaderComponent'
-import Home from './pages/home.vue'
 import Footer from './components/footerComponent.vue'
 
 
@@ -18,7 +17,6 @@ export default {
   name: 'App',
   components: {
     Header,
-    Home,
     Footer
   }
 }
