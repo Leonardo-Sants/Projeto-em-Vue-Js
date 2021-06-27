@@ -3,8 +3,8 @@
 
         <nav class="container">
 
-            <a href="http:/"><img id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg
-            " alt="Wdev"></a>
+            <router-link to="/"><img id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg
+            " alt="Wdev"></router-link>
 
             <img @click="openMenu" id="menu-button" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg
             " alt="Abrir menu">
@@ -17,10 +17,10 @@
                 " alt="Wdev"></a>
 
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/Videos">Vídeo</a></li>
-                    <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/contato">Contato</a></li>
+                    <li @click="closeMenu"><router-link to="/">Home</router-link></li>
+                    <li @click="closeMenu"><router-link to="/Videos">Vídeo</router-link></li>
+                    <li @click="closeMenu"><router-link to="/sobre">Sobre</router-link></li>
+                    <li @click="closeMenu"><router-link to="/contato">Contato</router-link></li>
                 </ul>
 
             </div>
@@ -66,6 +66,7 @@ nav {
 
 #logo {
     width: 130px;
+    display: flex;
 }
 
 #menu-button {
@@ -74,6 +75,7 @@ nav {
 
 .container {
     width: 90%;
+    align-items: center;
 }
 
 #menu-overlay {
